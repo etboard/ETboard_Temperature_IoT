@@ -88,7 +88,7 @@ void loop()
       mqtt.send_analog();
       //mqtt.send_digital();
       send_temperature();
-      display_Temperature();
+      display_Information();
       lastMillis = millis();
    }  
 
@@ -126,22 +126,20 @@ void display_BI()
 }
 
 //==========================================================================================
-void display_Temperature() 
+void display_Information() 
 //==========================================================================================
 {
-  float h = dht.readHumidity();  
+  
   float t = dht.readTemperature();  
-
-  if (isnan(h) || isnan(t)) {
+  if (isnan(t)) {
     Serial.println(F("Failed to read from DHT sensor!"));
     return;
   }
-
   String string_t = String(t, 2); 
   
-  oled.setLine(1,"<ketri.re.kr>");
-  oled.setLine(2,"Temperature");
-  oled.setLine(3,string_t);
+  oled.setLine(1,board_firmware_verion);
+  oled.setLine(2,"M:" + mqtt.mac_address.substring(9));
+  oled.setLine(3,"T:" + string_t);
   oled.display();  
 }
 
