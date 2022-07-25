@@ -8,8 +8,8 @@
 
 #include "EspMQTTClient.h"
 EspMQTTClient client(
-  "ketri",
-  "ketri2484",
+  "iptime-guest",
+  "12341234",
   "broker.hivemq.com",  // MQTT Broker server ip
   "",                   // Can be omitted if not needed  // Username
   "",                   // Can be omitted if not needed  // Password
