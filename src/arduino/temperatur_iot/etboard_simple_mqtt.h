@@ -7,7 +7,7 @@
 #define ETBOARD_SIMPLE_MQTT_H
 
 #include <Arduino.h>
-#include <String>
+//#include <String>
 #include <ArduinoJson.h>
 
 class ETBOARD_SIMPLE_MQTT {

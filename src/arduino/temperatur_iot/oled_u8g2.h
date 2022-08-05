@@ -6,8 +6,9 @@
 #ifndef OLED_U8G2_H
 #define OLED_U8G2_H
 
+// 2022.08.06 : SCS
 #include <Arduino.h>
-#include <String>
+//#include <String>
 
 class OLED_U8G2{
 

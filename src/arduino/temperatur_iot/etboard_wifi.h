@@ -6,7 +6,7 @@
 #ifndef ETBOARD_WIFI_H
 #define ETBOARD_WIFI_H
 
-#include <Arduino.h>
+//#include <Arduino.h>
 #include <SPIFFS.h>              //this needs to be first, or it all crashes and burns...
 #include <WiFiManager.h>          //https://github.com/tzapu/WiFiManager
 #include <ArduinoJson.h>          //https://github.com/bblanchon/ArduinoJson
