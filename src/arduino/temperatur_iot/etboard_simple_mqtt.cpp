@@ -7,14 +7,24 @@
 #include "etboard_simple_mqtt.h"
 
 #include "EspMQTTClient.h"
+
+/*
 EspMQTTClient client(
-  "iptime-guest",
-  "12341234",
-  "broker.hivemq.com",  // MQTT Broker server ip
+  "ssid",               // WiFi SSID
+  "passwd",             // WiFi password
+  "mqtttserver-name",   // MQTT Broker server ip
   "",                   // Can be omitted if not needed  // Username
   "",                   // Can be omitted if not needed  // Password
   "",                   // Client name that uniquely identify your device
   1883                  // The MQTT port, default to 1883. this line can be omitted
+);
+*/
+EspMQTTClient client(
+  "broker.hivemq.com",  // MQTT Broker server ip
+  1883,              // The MQTT port, default to 1883. this line can be omitted
+  "",               // Can be omitted if not needed
+  "",               // Can be omitted if not needed
+  ""                // Client name that uniquely identify your device
 );
 
 #define MAX_ANALOG 8
@@ -34,9 +44,41 @@ ETBOARD_SIMPLE_MQTT::ETBOARD_SIMPLE_MQTT()
 }
 
 //=================================================================================
-void ETBOARD_SIMPLE_MQTT::setup(void) 
+void ETBOARD_SIMPLE_MQTT::setup(
+    const char* mqttServerIp,
+    const short mqttServerPort,
+    const char* mqttUsername,
+    const char* mqttPassword,
+    const char* mqttClientName)
+//=================================================================================
+{  
+  client.setMqttServer(mqttServerIp, mqttUsername, mqttPassword, mqttServerPort); 
+  
+  // 2021.12.19 : SCS : dt->data, et->etboard, smpl -> simple
+  mqtt_prefix = "dt/et/smpl";
+  mac_address = "";
+    
+  // Optional functionalities of EspMQTTClient
+  client.enableDebuggingMessages(); // Enable debugging messages sent to serial output
+  //client.enableHTTPWebUpdater(); // Enable the web updater. User and password default to values of MQTTUsername and MQTTPassword. These can be overridded with enableHTTPWebUpdater("user", "password").
+  //client.enableOTA(); // Enable OTA (Over The Air) updates. Password defaults to MQTTPassword. Port is the default OTA port. Can be overridden with enableOTA("password", port).
+  //client.enableLastWillMessage("TestClient/lastwill", "I am going offline");  // You can activate the retain flag by setting the third parameter to true
+}
+
+//=================================================================================
+void ETBOARD_SIMPLE_MQTT::setup_with_wifi(
+    const char* wifiSsid,
+    const char* wifiPassword,
+    const char* mqttServerIp,
+    const char* mqttUsername,
+    const char* mqttPassword,
+    const char* mqttClientName,
+    const short mqttServerPort) 
 //=================================================================================
 {
+  client.setWifiCredentials(wifiSsid, wifiPassword);
+  client.setMqttServer(mqttServerIp, mqttUsername, mqttPassword, mqttServerPort); 
+  
   // 2021.12.19 : SCS : dt->data, et->etboard, smpl -> simple
   mqtt_prefix = "dt/et/smpl";
   mac_address = "";

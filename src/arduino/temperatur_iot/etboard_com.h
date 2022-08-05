@@ -16,7 +16,7 @@ class ETBOARD_COM {
   
   public:
   	ETBOARD_COM();
-  	void setup(void);
+  	void setup(void);    
   	void fast_blink_led(void);
     void normal_blink_led(void);
     void print_board_information(const char* hardware_version, const char* firmware_verion);

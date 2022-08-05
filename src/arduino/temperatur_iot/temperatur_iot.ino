@@ -21,7 +21,10 @@ const char* board_firmware_verion = "etb_temp_v0.9";
 OLED_U8G2 oled;
 
 #include "etboard_com.h"
-ETBOARD_COM etb;
+ETBOARD_COM etboard;
+
+#include "etboard_wifi.h"
+ETBOARD_WIFI wifi;
 
 #include "etboard_simple_mqtt.h"
 ETBOARD_SIMPLE_MQTT mqtt;
@@ -50,9 +53,9 @@ void setup()
   //----------------------------------------------------------------------------------------
   // etboard
   //----------------------------------------------------------------------------------------  
-  etb.setup();
-  etb.fast_blink_led();
-  etb.print_board_information(board_hardware_verion, board_firmware_verion);    
+  etboard.setup();
+  etboard.fast_blink_led();
+  etboard.print_board_information(board_hardware_verion, board_firmware_verion);    
 
   //----------------------------------------------------------------------------------------
   // oled
@@ -61,9 +64,32 @@ void setup()
   display_BI();  
 
   //----------------------------------------------------------------------------------------
-  // mqtt
+  // wifi
   //----------------------------------------------------------------------------------------
-  mqtt.setup();
+  wifi.setup();
+
+  //delay(1000);
+
+  //----------------------------------------------------------------------------------------
+  // mqtt
+  //----------------------------------------------------------------------------------------  
+  mqtt.setup("broker.hivemq.com",  // MQTT Broker server ip
+             1883,                 // The MQTT port, default to 1883. this line can be omitted);
+             "",                   // Can be omitted if not needed  // Username
+             "",                   // Can be omitted if not needed  // Password
+             "");                  // Client name that uniquely identify your device
+             
+  
+  /*
+  mqtt.setup_with_wifi
+            ("iptime-guest",     // WiFi SSID
+             "12341234",         // WiFi password
+             "broker.hivemq.com",  // MQTT Broker server ip
+             "",                   // Can be omitted if not needed  // Username
+             "",                   // Can be omitted if not needed  // Password
+             "",                   // Client name that uniquely identify your device
+             1883);                // The MQTT port, default to 1883. this line can be omitted);              
+  */             
 
   //----------------------------------------------------------------------------------------
   // initialize variables
@@ -103,7 +129,7 @@ void loop()
   //----------------------------------------------------------------------------------------
   // Blink Operation LED
   //----------------------------------------------------------------------------------------  
-  etb.normal_blink_led();
+  etboard.normal_blink_led();
 }
 
 
@@ -133,7 +159,7 @@ void display_Information()
   float t = dht.readTemperature();  
   if (isnan(t)) {
     Serial.println(F("Failed to read from DHT sensor!"));
-    return;
+    t = -99;
   }
   String string_t = String(t, 2); 
   

@@ -20,7 +20,23 @@ class ETBOARD_SIMPLE_MQTT {
     String mac_address;
     
   	ETBOARD_SIMPLE_MQTT();
-  	void setup(void);
+    
+    void setup(
+      const char* mqttServerIp,
+      const short mqttServerPort,
+      const char* mqttUsername,
+      const char* mqttPassword,
+      const char* mqttClientName);  
+      
+    void setup_with_wifi(
+      const char* wifiSsid,
+      const char* wifiPassword,
+      const char* mqttServerIp,
+      const char* mqttUsername,
+      const char* mqttPassword,
+      const char* mqttClientName,
+      const short mqttServerPort);    
+      
     String get_topic_prefix(void);
     void onConnectionEstablished(void);
     void send_analog_a0(void);
