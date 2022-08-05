@@ -14,7 +14,9 @@ WiFiManagerParameter * custom_mqtt_pass;
   
 bool ETBOARD_WIFI::shouldSaveConfig = false;
 
-#define TRIGGER_PIN D5
+#define TRIGGER_PIN D9
+
+WiFiManager wifiManager;
 
 //=================================================================================
 //callback notifying us of the need to save config
@@ -54,21 +56,21 @@ void ETBOARD_WIFI::setup(void)
 
   checkButton();
    
-  //load_config();
+  load_config();
 
-  //wifi_config();
+  wifi_config();
  
   //save the custom parameters to FS
   if (shouldSaveConfig) {
     //read updated parameters
-    /*
+    
     strcpy(mqtt_server, custom_mqtt_server->getValue());
     strcpy(mqtt_port, custom_mqtt_port->getValue());
     strcpy(mqtt_user, custom_mqtt_user->getValue());
     strcpy(mqtt_pass, custom_mqtt_pass->getValue());
     
     save_config();
-    */
+    
   }
   
   Serial.println("local ip");
@@ -88,7 +90,9 @@ void ETBOARD_WIFI::checkButton()
       if( digitalRead(TRIGGER_PIN) == LOW ){
         Serial.println("Button Held");
         Serial.println("Erasing Config, restarting");
-        wm.resetSettings();
+        wifiManager.resetSettings();
+        // 2022.08.06
+        SPIFFS.format();
         ESP.restart();
       }
     }
@@ -163,6 +167,7 @@ void ETBOARD_WIFI::wifi_config()
   // After connecting, parameter.getValue() will get you the configured value
   // id/name placeholder/prompt default length  
   Serial.println(mqtt_server);
+
   /*
   WiFiManagerParameter custom_mqtt_server("server", "mqtt server", mqtt_server, 40);
   WiFiManagerParameter custom_mqtt_port("port", "mqtt port", mqtt_port, 6);
@@ -170,9 +175,10 @@ void ETBOARD_WIFI::wifi_config()
   WiFiManagerParameter custom_mqtt_pass("pass", "mqtt pass", mqtt_pass, 20);
   */
   
+  
   //WiFiManager
   //Local intialization. Once its business is done, there is no need to keep it around
-  WiFiManager wifiManager;
+  //WiFiManager wifiManager;
 
 // Reset Wifi settings for testing  
 //  wifiManager.resetSettings();
@@ -183,13 +189,12 @@ void ETBOARD_WIFI::wifi_config()
   //set static ip
 //  wifiManager.setSTAStaticIPConfig(IPAddress(10,0,1,99), IPAddress(10,0,1,1), IPAddress(255,255,255,0));
   
-  //add all your parameters here
-  /*
+  //add all your parameters here  
   wifiManager.addParameter(custom_mqtt_server);
   wifiManager.addParameter(custom_mqtt_port);
   wifiManager.addParameter(custom_mqtt_user);
   wifiManager.addParameter(custom_mqtt_pass);
-  */
+  
 
   //reset settings - for testing
   //wifiManager.resetSettings();

@@ -12,8 +12,8 @@
  
 //needed for library
 #include <DNSServer.h>
-#include <WiFiManager.h>          //https://github.com/tzapu/WiFiManager
-#include <ArduinoJson.h>          //https://github.com/bblanchon/ArduinoJson
+#include <WiFiManager.h>          //https://github.com/tzapu/WiFiManager :  2.0 이상
+#include <ArduinoJson.h>          //https://github.com/bblanchon/ArduinoJson : 5.대
 #include <PubSubClient.h>
 
 //flag for saving data
