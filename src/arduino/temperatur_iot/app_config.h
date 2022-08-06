@@ -11,9 +11,9 @@
 #ifndef APP_CONFIG_H
 #define APP_CONFIG_H
 
-#include "etboard_com.h"
-#include "etboard_simple_mqtt.h"
-#include "etboard_oled_u8g2.h"
+#include "lib/etboard_com.h"
+#include "lib/etboard_simple_mqtt.h"
+#include "lib/etboard_oled_u8g2.h"
 
 //==========================================================================================
 class APP_CONFIG 

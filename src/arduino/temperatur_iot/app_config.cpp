@@ -13,16 +13,20 @@
 //==========================================================================================
 // Include Componet header
 //==========================================================================================
-#include "etboard_oled_u8g2.h"
+#include "lib/etboard_oled_u8g2.h"
+#include "lib/etboard_oled_u8g2.cpp"
 //OLED_U8G2 oled;
 
-#include "etboard_com.h"
+#include "lib/etboard_com.h"
+#include "lib/etboard_com.cpp"
 //ETBOARD_COM etboard;
 
-#include "etboard_wifi.h"
+#include "lib/etboard_wifi.h"
+#include "lib/etboard_wifi.cpp"
 ETBOARD_WIFI wifi;
 
-#include "etboard_simple_mqtt.h"
+#include "lib/etboard_simple_mqtt.h"
+#include "lib/etboard_simple_mqtt.cpp"
 //ETBOARD_SIMPLE_MQTT mqtt;
 
 //==========================================================================================
