@@ -1,11 +1,14 @@
-/********************************************************************************** 
- * Author : SCS
- * Date : 2018.09.30  
- * Description : SSD1306 OLED Display  
- * Reference: FontUsage.ino in u8g2 examples 
- **********************************************************************************/
+/******************************************************************************************
+ * FileName     : etboard_oled_u8g2.cpp
+ * Description  : ETboard SS1306 OLED
+ * Author       : SCS
+ * Created Date : 2022.08.06
+ * Reference    : 
+ * Modified     : 
+ * Modified     : 
+******************************************************************************************/
 
-#include "oled_u8g2.h"
+#include "etboard_oled_u8g2.h"
 
 #include <Arduino.h>
 #include <U8g2lib.h>
@@ -29,7 +32,7 @@ U8G2_SSD1306_128X64_NONAME_F_HW_I2C u8g2(U8G2_R0, /* reset=*/ U8X8_PIN_NONE);
 // End of constructor
 
 //=================================================================================
-OLED_U8G2::OLED_U8G2() 
+ETBOARD_OLED_U8G2::ETBOARD_OLED_U8G2() 
 //=================================================================================	
 {
 	lineString[0] = "";	
@@ -38,7 +41,7 @@ OLED_U8G2::OLED_U8G2()
 }
 
 //=================================================================================
-void OLED_U8G2::setup(void) 
+void ETBOARD_OLED_U8G2::setup(void) 
 	//=================================================================================
 {
   u8g2.begin();
@@ -46,7 +49,7 @@ void OLED_U8G2::setup(void)
 }
 
 //=================================================================================
-void OLED_U8G2::setLine(int line, String buffer)
+void ETBOARD_OLED_U8G2::setLine(int line, String buffer)
 //=================================================================================
 {  
   if (line < 1 || line > 3) return;
@@ -54,7 +57,7 @@ void OLED_U8G2::setLine(int line, String buffer)
 }
 
 //=================================================================================
-void OLED_U8G2::display() 
+void ETBOARD_OLED_U8G2::display() 
 //=================================================================================
 { 
 	// Clear 

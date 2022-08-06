@@ -1,9 +1,12 @@
-/********************************************************************************** 
- * Author : SCS
- * Date : 2018.09.30  
- * Description : SSD1306 OLED Display  
- * Reference: FontUsage.ino in u8g2 examples 
- **********************************************************************************/
+/******************************************************************************************
+ * FileName     : etboard_com.cpp
+ * Description  : ETboard 공통 
+ * Author       : SCS
+ * Created Date : 2022.08.06
+ * Reference    : 
+ * Modified     : 
+ * Modified     : 
+******************************************************************************************/
 
 #include "etboard_com.h"
 
@@ -24,7 +27,12 @@ ETBOARD_COM::ETBOARD_COM()
 void ETBOARD_COM::setup(void) 
 //=================================================================================
 {
-  pinMode(LED_BUILTIN, OUTPUT);  
+  pinMode(LED_BUILTIN, OUTPUT);  digitalWrite(LED_BUILTIN, LOW); 
+  pinMode(D2, OUTPUT); digitalWrite(D2, LOW); 
+  pinMode(D3, OUTPUT); digitalWrite(D3, LOW); 
+  pinMode(D4, OUTPUT); digitalWrite(D4, LOW);
+  pinMode(D5, OUTPUT); digitalWrite(D5, LOW);
+  
   Serial.begin(115200);
 }
 
@@ -66,15 +74,31 @@ void ETBOARD_COM::normal_blink_led(void)
 }
 
 //=================================================================================
+void ETBOARD_COM::wifi_setup_start_led(void) 
+//=================================================================================
+{
+  pinMode(D4, OUTPUT); digitalWrite(D3, HIGH);    // Green LED ON
+}
+
+//=================================================================================
+void ETBOARD_COM::wifi_setup_end_led(void) 
+//=================================================================================
+{
+  pinMode(D4, OUTPUT); digitalWrite(D3, LOW);     // Green LED OFF
+}
+
+//=================================================================================
 void ETBOARD_COM::print_board_information(const char* hardware_version, const char* firmware_verion)
 //=================================================================================
 {
   Serial.print("\n\n");  
-  Serial.print("Welcome to ");
+  Serial.println("****************************************************************");
+  Serial.print(" Welcome to ");  
   Serial.print(hardware_version);
   Serial.println(" !!!");
-  Serial.print("Firmware version is ");
+  Serial.print(" Firmware version is ");
   Serial.println(firmware_verion);  
+  Serial.println("****************************************************************");
 }
  
 //=================================================================================

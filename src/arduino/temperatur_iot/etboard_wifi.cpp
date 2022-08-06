@@ -1,9 +1,12 @@
-/********************************************************************************** 
- * Author : SCS
- * Date : 2018.09.30  
- * Description : SSD1306 OLED Display  
- * Reference: FontUsage.ino in u8g2 examples 
- **********************************************************************************/
+/******************************************************************************************
+ * FileName     : etboard_wifi.cpp
+ * Description  : ETboard WiFi Manager
+ * Author       : SCS
+ * Created Date : 2022.08.06
+ * Reference    : 
+ * Modified     : 
+ * Modified     : 
+******************************************************************************************/
 
 #include "etboard_wifi.h"
 
@@ -50,6 +53,11 @@ ETBOARD_WIFI::ETBOARD_WIFI()
 void ETBOARD_WIFI::setup(void) 
 //=================================================================================
 {
+  Serial.println("\n");    
+  Serial.println("================================================================");
+  Serial.println(" WiFi setup starting..... ");  
+  Serial.println("================================================================");
+  
   //clean FS for testing 
   //SPIFFS.format();
   pinMode(TRIGGER_PIN, INPUT);
@@ -62,22 +70,31 @@ void ETBOARD_WIFI::setup(void)
  
   //save the custom parameters to FS
   if (shouldSaveConfig) {
-    //read updated parameters
-    
+    //read updated parameters    
     strcpy(mqtt_server, custom_mqtt_server->getValue());
     strcpy(mqtt_port, custom_mqtt_port->getValue());
     strcpy(mqtt_user, custom_mqtt_user->getValue());
     strcpy(mqtt_pass, custom_mqtt_pass->getValue());
     
-    save_config();
-    
+    save_config();    
   }
+
+  Serial.println("");
+  Serial.println("----------------------------------------------------------------");
+  Serial.print(" ETboard local ip address is [");
+  Serial.print(WiFi.localIP());
+  Serial.println("]");
+  Serial.println("----------------------------------------------------------------");
+  Serial.println("");
+  Serial.println("================================================================");
+  Serial.println(" WiFi setup ending ..... ");  
+  Serial.println("================================================================");
   
-  Serial.println("local ip");
-  Serial.println(WiFi.localIP());
 }
 
+//=================================================================================
 void ETBOARD_WIFI::checkButton()
+//=================================================================================
 {
   // check for button press
   if ( digitalRead(TRIGGER_PIN) == LOW ) {
@@ -99,8 +116,9 @@ void ETBOARD_WIFI::checkButton()
   }
 }
 
-
+//=================================================================================
 void ETBOARD_WIFI::load_config()
+//=================================================================================
 {
   //read configuration from FS json
   Serial.println("mounting FS...");
@@ -140,7 +158,10 @@ void ETBOARD_WIFI::load_config()
   }
   //end read
 }
+
+//=================================================================================
 void ETBOARD_WIFI::save_config()
+//=================================================================================
 {
     Serial.println("saving config");
     DynamicJsonBuffer jsonBuffer;
@@ -161,7 +182,9 @@ void ETBOARD_WIFI::save_config()
     //end save
 }
 
+//=================================================================================
 void ETBOARD_WIFI::wifi_config()
+//=================================================================================
 {
   // The extra parameters to be configured (can be either global or just in the setup)
   // After connecting, parameter.getValue() will get you the configured value

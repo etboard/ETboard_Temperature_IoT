@@ -9,94 +9,41 @@
 ******************************************************************************************/
 
 //==========================================================================================
-// Firmware Version
+// Include application configuration
 //==========================================================================================
-const char* board_hardware_verion = "ETBoard_V1.1";
-const char* board_firmware_verion = "etb_temp_v0.9";
+#include "app_config.h"
+APP_CONFIG app;
 
-//==========================================================================================
-// Include Common
-//==========================================================================================
-#include "oled_u8g2.h"
-OLED_U8G2 oled;
-
-#include "etboard_com.h"
-ETBOARD_COM etboard;
-
-#include "etboard_wifi.h"
-ETBOARD_WIFI wifi;
-
-#include "etboard_simple_mqtt.h"
-ETBOARD_SIMPLE_MQTT mqtt;
+//const uint16_t NORMAL_SEND_INTERVAL = 1000 * 5;
+#define NORMAL_SEND_INTERVAL  (1000 * 5)
 
 //==========================================================================================
-// Include custom
+// Include custom header
 //==========================================================================================
-#include "DHT.h"
-
-#define DHTPIN D9     // Digital pin connected to the DHT sensor
-#define DHTTYPE DHT11 // DHT 11
-
-DHT dht(DHTPIN, DHTTYPE);
+#include "DHT.h"              // 디지털 온습도 센서
+DHT dht(D9, DHT11);           // DHT11
 
 //==========================================================================================
-// Declaration
+// Declarea Global Variables
 //==========================================================================================
-const uint16_t NORMAL_SEND_INTERVAL = 1000 * 5;
-
-static unsigned lastMillis = 0;
+float humidity;               // 습도
+float temperature;            // 온도
 
 //==========================================================================================
 void setup()
 //==========================================================================================
 {
-  //----------------------------------------------------------------------------------------
-  // etboard
-  //----------------------------------------------------------------------------------------  
-  etboard.setup();
-  etboard.fast_blink_led();
-  etboard.print_board_information(board_hardware_verion, board_firmware_verion);    
+  app.setup();
 
-  //----------------------------------------------------------------------------------------
-  // oled
-  //----------------------------------------------------------------------------------------
-  oled.setup();
-  display_BI();  
-
-  //----------------------------------------------------------------------------------------
-  // wifi
-  //----------------------------------------------------------------------------------------
-  wifi.setup();
-
-  //delay(1000);
-
-  //----------------------------------------------------------------------------------------
-  // mqtt
-  //----------------------------------------------------------------------------------------  
-  mqtt.setup("broker.hivemq.com",  // MQTT Broker server ip
-             1883,                 // The MQTT port, default to 1883. this line can be omitted);
-             "",                   // Can be omitted if not needed  // Username
-             "",                   // Can be omitted if not needed  // Password
-             "");                  // Client name that uniquely identify your device
-             
-  
-  /*
-  mqtt.setup_with_wifi
-            ("iptime-guest",     // WiFi SSID
-             "12341234",         // WiFi password
-             "broker.hivemq.com",  // MQTT Broker server ip
-             "",                   // Can be omitted if not needed  // Username
-             "",                   // Can be omitted if not needed  // Password
-             "",                   // Client name that uniquely identify your device
-             1883);                // The MQTT port, default to 1883. this line can be omitted);              
-  */             
-
-  //----------------------------------------------------------------------------------------
-  // initialize variables
-  //----------------------------------------------------------------------------------------
-  lastMillis = millis();
+  custom_setup();
 }
 
+//==========================================================================================
+void custom_setup() 
+//==========================================================================================
+{
+  // Insert your custom code here  
+}
 
 //==========================================================================================
 void loop()
@@ -105,31 +52,28 @@ void loop()
   //----------------------------------------------------------------------------------------
   // MQTT loop
   //----------------------------------------------------------------------------------------
-  mqtt.loop();
+  app.mqtt.loop();
     
   //----------------------------------------------------------------------------------------
-  //  Send sensor value
+  //  Send information periodically as NORMAL_SEND_INTERVAL
   //----------------------------------------------------------------------------------------
-  if (millis() - lastMillis > NORMAL_SEND_INTERVAL) {  
-      mqtt.send_analog();
-      //mqtt.send_digital();
-      send_temperature();
+  if (millis() - app.lastMillis > NORMAL_SEND_INTERVAL) {  
+      send_humidity_and_temperature();
       display_Information();
-      lastMillis = millis();
+      app.lastMillis = millis();
    }  
 
   //----------------------------------------------------------------------------------------
-  //  Send digital sensor value if changed
+  //  Send the dDigital sensor value if changed
   //----------------------------------------------------------------------------------------    
-   if (mqtt.is_changed_digital() == true) {
-      mqtt.send_digital();
-      test1();
+   if (app.mqtt.is_changed_digital() == true) {
+      app.mqtt.send_digital();      
    }
   
   //----------------------------------------------------------------------------------------
   // Blink Operation LED
   //----------------------------------------------------------------------------------------  
-  etboard.normal_blink_led();
+  app.etboard.normal_blink_led();
 }
 
 
@@ -137,63 +81,40 @@ void loop()
 void onConnectionEstablished()
 //==========================================================================================
 {
-  mqtt.onConnectionEstablished();
-}
-
-
-//==========================================================================================
-void display_BI() 
-//==========================================================================================
-{
-  oled.setLine(1,"<ketri.re.kr>");
-  oled.setLine(2,"Welcome to");
-  oled.setLine(3," ET-Board");
-  oled.display();  
+  app.mqtt.onConnectionEstablished();
 }
 
 //==========================================================================================
 void display_Information() 
 //==========================================================================================
 {
+  String string_t = String(temperature, 2); 
   
-  float t = dht.readTemperature();  
-  if (isnan(t)) {
-    Serial.println(F("Failed to read from DHT sensor!"));
-    t = -99;
-  }
-  String string_t = String(t, 2); 
-  
-  oled.setLine(1,board_firmware_verion);
-  oled.setLine(2,"M:" + mqtt.mac_address.substring(9));
-  oled.setLine(3,"T:" + string_t);
-  oled.display();  
+  app.oled.setLine(1, app.board_firmware_verion);
+  app.oled.setLine(2,"M:" + app.mqtt.mac_address.substring(9));
+  app.oled.setLine(3,"T:" + string_t);
+  app.oled.display();  
 }
 
 //==========================================================================================
-void test1()
-//==========================================================================================
-{  
-  int sensorValue = 0; 
-  sensorValue = analogRead(A0);
-  mqtt.publish("/a0", String(sensorValue));
-}
-
-//==========================================================================================
-void send_temperature()
+void send_humidity_and_temperature()
 //==========================================================================================
 { 
-  float h = dht.readHumidity();  
-  float t = dht.readTemperature();  
+  humidity = dht.readHumidity();  
+  temperature = dht.readTemperature();  
 
-  if (isnan(h) || isnan(t)) {
+  if (isnan(humidity) || isnan(temperature)) {
     Serial.println(F("Failed to read from DHT sensor!"));
     return;
   }
 
-  String string_t = String(t, 2); 
-  mqtt.publish("/temperature", String(string_t));
-}
+  String string_t;
+  string_t= String(temperature, 2); 
+  app.mqtt.publish("/temperature", String(string_t));
 
+  string_t = String(humidity, 2); 
+  app.mqtt.publish("/humidity", String(string_t));
+}
 
 //==========================================================================================
 //                                                    

@@ -1,6 +1,6 @@
 /******************************************************************************************
- * FileName     : etboard_com.h
- * Description  : ETboard 공통 
+ * FileName     : etboard oled_u8g2.h
+ * Description  : ETboard SS1306 OLED
  * Author       : SCS
  * Created Date : 2022.08.06
  * Reference    : 
@@ -8,26 +8,24 @@
  * Modified     : 
 ******************************************************************************************/
 
-#ifndef ETBOARD_COM_H
-#define ETBOARD_COM_H
+#ifndef ETBOARD_OLED_U8G2_H
+#define ETBOARD_OLED_U8G2_H
 
+// 2022.08.06 : SCS
 #include <Arduino.h>
 //#include <String>
 
-class ETBOARD_COM {
+class ETBOARD_OLED_U8G2{
 
-  private:	
-    //String lineString[3];
+private:	
+  String lineString[3];
+
+public:
+	ETBOARD_OLED_U8G2();
   
-  public:
-  	ETBOARD_COM();
-  	void setup(void);    
-  	void fast_blink_led(void);
-    void normal_blink_led(void);
-    void wifi_setup_start_led(void);
-    void wifi_setup_end_led(void);
-    void print_board_information(const char* hardware_version, const char* firmware_verion);
-  
+	void setup(void);
+	void setLine(int line, String buffer);
+	void display();	
 };
 
 #endif

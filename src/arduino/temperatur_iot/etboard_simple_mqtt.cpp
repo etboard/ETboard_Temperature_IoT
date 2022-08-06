@@ -1,24 +1,16 @@
-/********************************************************************************** 
- * Author : SCS
- * Date : 2018.09.30  
- * Description : SSD1306 OLED Display  
- * Reference: FontUsage.ino in u8g2 examples 
- **********************************************************************************/
-#include "etboard_simple_mqtt.h"
+/******************************************************************************************
+ * FileName     : etboard_simple_mqtt.cpp
+ * Description  : ETboard Simple MQTT
+ * Author       : SCS
+ * Created Date : 2022.08.06
+ * Reference    : 
+ * Modified     : 
+ * Modified     : 
+******************************************************************************************/
 
+#include "etboard_simple_mqtt.h"
 #include "EspMQTTClient.h"
 
-/*
-EspMQTTClient client(
-  "ssid",               // WiFi SSID
-  "passwd",             // WiFi password
-  "mqtttserver-name",   // MQTT Broker server ip
-  "",                   // Can be omitted if not needed  // Username
-  "",                   // Can be omitted if not needed  // Password
-  "",                   // Client name that uniquely identify your device
-  1883                  // The MQTT port, default to 1883. this line can be omitted
-);
-*/
 EspMQTTClient client(
   "broker.hivemq.com",  // MQTT Broker server ip
   1883,              // The MQTT port, default to 1883. this line can be omitted
@@ -40,7 +32,8 @@ int digitals_value[MAX_DIGITAL]= {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1};
 ETBOARD_SIMPLE_MQTT::ETBOARD_SIMPLE_MQTT() 
 //=================================================================================	
 {
-
+  mqtt_prefix = "dt/et/smpl";
+  mac_address = "";
 }
 
 //=================================================================================
@@ -52,17 +45,26 @@ void ETBOARD_SIMPLE_MQTT::setup(
     const char* mqttClientName)
 //=================================================================================
 {  
+  Serial.println("\n");    
+  Serial.println("================================================================");
+  Serial.println(" MQTT setup starting..... ");  
+  Serial.println("================================================================");
+  
   client.setMqttServer(mqttServerIp, mqttUsername, mqttPassword, mqttServerPort); 
   
   // 2021.12.19 : SCS : dt->data, et->etboard, smpl -> simple
-  mqtt_prefix = "dt/et/smpl";
-  mac_address = "";
+  //mqtt_prefix = "dt/et/smpl";
+  //mac_address = "";
     
   // Optional functionalities of EspMQTTClient
   client.enableDebuggingMessages(); // Enable debugging messages sent to serial output
   //client.enableHTTPWebUpdater(); // Enable the web updater. User and password default to values of MQTTUsername and MQTTPassword. These can be overridded with enableHTTPWebUpdater("user", "password").
   //client.enableOTA(); // Enable OTA (Over The Air) updates. Password defaults to MQTTPassword. Port is the default OTA port. Can be overridden with enableOTA("password", port).
   //client.enableLastWillMessage("TestClient/lastwill", "I am going offline");  // You can activate the retain flag by setting the third parameter to true
+
+  Serial.println("================================================================");
+  Serial.println(" MQTT setup ending ..... ");  
+  Serial.println("================================================================");
 }
 
 //=================================================================================
@@ -76,18 +78,27 @@ void ETBOARD_SIMPLE_MQTT::setup_with_wifi(
     const short mqttServerPort) 
 //=================================================================================
 {
+  Serial.println("\n");    
+  Serial.println("================================================================");
+  Serial.println(" MQTT setup starting..... ");  
+  Serial.println("================================================================");
+  
   client.setWifiCredentials(wifiSsid, wifiPassword);
   client.setMqttServer(mqttServerIp, mqttUsername, mqttPassword, mqttServerPort); 
   
   // 2021.12.19 : SCS : dt->data, et->etboard, smpl -> simple
-  mqtt_prefix = "dt/et/smpl";
-  mac_address = "";
+  //mqtt_prefix = "dt/et/smpl";
+  //mac_address = "";
     
   // Optional functionalities of EspMQTTClient
   client.enableDebuggingMessages(); // Enable debugging messages sent to serial output
   //client.enableHTTPWebUpdater(); // Enable the web updater. User and password default to values of MQTTUsername and MQTTPassword. These can be overridded with enableHTTPWebUpdater("user", "password").
   //client.enableOTA(); // Enable OTA (Over The Air) updates. Password defaults to MQTTPassword. Port is the default OTA port. Can be overridden with enableOTA("password", port).
   //client.enableLastWillMessage("TestClient/lastwill", "I am going offline");  // You can activate the retain flag by setting the third parameter to true
+
+  Serial.println("================================================================");
+  Serial.println(" MQTT setup ending ..... ");  
+  Serial.println("================================================================");
 }
 
 //=================================================================================
