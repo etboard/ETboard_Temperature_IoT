@@ -33,7 +33,7 @@ class ETBOARD_SIMPLE_MQTT {
     String mqtt_simple_stat;
 
     String mac_address;
-    char   ch_client_name[20];
+    char   ch_mac_address[20];
     int current_digital_value[MAX_DIGITAL];
     
   	ETBOARD_SIMPLE_MQTT();

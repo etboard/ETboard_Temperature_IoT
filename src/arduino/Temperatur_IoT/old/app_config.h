@@ -2,7 +2,7 @@
  * FileName     : app_config.h
  * Description  : 응용 프로그램 구성 
  * Author       : SCS
- * Created Date : 2022.08.08
+ * Created Date : 2022.08.06
  * Reference    : 
  * Modified     : 
  * Modified     : 
@@ -14,38 +14,27 @@
 #include "lib/etboard_com.h"
 #include "lib/etboard_simple_mqtt.h"
 #include "lib/etboard_oled_u8g2.h"
-#include "lib/etboard_wifi.h"
 
 //==========================================================================================
 class APP_CONFIG 
 //==========================================================================================
 {
 
-  private:      
+  private:  
+    //String lineString[3];
   
-  public:          
-    const char* board_hardware_verion = "ETBoard_V1.1";
-    const char* board_firmware_verion = "smartLgt_v0.9";
-    unsigned lastMillis;
-    String operation_mode = "automatic";
-    bool bDigitalChanged = false;
-    
+  public:
+    const char* board_firmware_verion = "etb_temp_v0.9";
+    unsigned lastMillis;//
     ETBOARD_OLED_U8G2 oled;
     ETBOARD_COM etboard;
-    ETBOARD_SIMPLE_MQTT mqtt; 
-    ETBOARD_WIFI wifi;   
+    ETBOARD_SIMPLE_MQTT mqtt;
     
     APP_CONFIG();
     void setup(void);    
     void fast_blink_led(void);
     void normal_blink_led(void); 
     void display_BI(void);
-
-    void dg_Write(int pin, int value);
-    void update_digital_value();
-    bool isChanged_digital_value(void);
-    void initailize_digital_value(void);
-    int  dg_Read(int pin);
     
 };
 
