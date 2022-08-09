@@ -59,8 +59,6 @@ void ETBOARD_WIFI::setup(void)
   Serial.println(" WiFi setup starting..... ");
   Serial.println("================================================================");
 
-  pinMode(TRIGGER_PIN, INPUT);
-
   checkButton();
 
   load_config();
@@ -95,6 +93,9 @@ void ETBOARD_WIFI::setup(void)
 void ETBOARD_WIFI::checkButton()
 //=================================================================================
 {
+  pinMode(TRIGGER_PIN, INPUT);
+  pinMode(D2, OUTPUT);
+
   // check for button press
   if ( digitalRead(TRIGGER_PIN) == LOW ) {
     // poor mans debounce/press-hold, code not ideal for production
@@ -104,6 +105,7 @@ void ETBOARD_WIFI::checkButton()
       // still holding button for 3000 ms, reset settings, code not ideaa for production
       delay(3000); // reset delay hold
       if( digitalRead(TRIGGER_PIN) == LOW ){
+        digitalWrite(D2, HIGH); // RED LED ON
         Serial.println("Button Held");
         Serial.println("Erasing Config, restarting");
         wifiManager.resetSettings();
