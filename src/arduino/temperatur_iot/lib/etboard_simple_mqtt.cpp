@@ -54,34 +54,15 @@ void ETBOARD_SIMPLE_MQTT::setup(
   Serial.println("================================================================");
   Serial.println(" MQTT setup starting..... ");  
   Serial.println("================================================================");
-  
-  Serial.print("1getMqttClientName=");
-  Serial.println(client.getMqttClientName());
-  
+    
   mac_address = WiFi.macAddress();
   
-  Serial.print("mac_address=");
-  Serial.println(mac_address);
-  
-   
-  {
-  	randomSeed(micros());
-  	String str_client_name = mac_address.substring(9);
-    str_client_name += "_" + String(random(0xffff), HEX);
-    
-	  int str_len = str_client_name.length() + 1;
-	  Serial.print("str_len=");
-    Serial.println(str_len);
-	  //char char_array[str_len];
-	  str_client_name.toCharArray(ch_client_name, str_len);
-	  Serial.print("char_array=");
-    Serial.println(ch_client_name);
-	  client.setMqttClientName(ch_client_name);
-	  Serial.print("1getMqttClientName=");
-    Serial.println(client.getMqttClientName());
-	}
-	
-  
+	randomSeed(micros());
+	String str_client_name = mac_address.substring(9);
+  str_client_name += "_" + String(random(0xffff), HEX);  
+  int str_len = str_client_name.length() + 1;
+  str_client_name.toCharArray(ch_client_name, str_len);
+  client.setMqttClientName(ch_client_name);  
   
   client.setMqttServer(mqttServerIp, mqttUsername, mqttPassword, mqttServerPort); 
       

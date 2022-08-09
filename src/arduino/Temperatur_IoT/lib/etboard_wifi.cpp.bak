@@ -234,7 +234,7 @@ void ETBOARD_WIFI::wifi_config()
   wifiManager.setTimeout(30);
   
   
-	String str_wifi_ap_name = "ET_AP_" + WiFi.macAddress().substring(9);  
+	String str_wifi_ap_name = "ET_AP_" + WiFi.macAddress.substring(9);  
   int str_len = str_wifi_ap_name.length() + 1;
   
   char ch_wifi_ap_name[20];

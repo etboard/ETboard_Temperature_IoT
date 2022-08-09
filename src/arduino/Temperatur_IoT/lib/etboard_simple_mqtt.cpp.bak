@@ -67,7 +67,7 @@ void ETBOARD_SIMPLE_MQTT::setup(
   {
   	randomSeed(micros());
   	String str_client_name = mac_address.substring(9);
-    str_client_name += String(random(0xffff), HEX);
+    str_client_name += "_" + String(random(0xffff), HEX);
     
 	  int str_len = str_client_name.length() + 1;
 	  Serial.print("str_len=");
