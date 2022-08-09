@@ -94,7 +94,6 @@ void ETBOARD_WIFI::checkButton()
 //=================================================================================
 {
   pinMode(TRIGGER_PIN, INPUT);
-  pinMode(D2, OUTPUT);
 
   // check for button press
   if ( digitalRead(TRIGGER_PIN) == LOW ) {
@@ -184,6 +183,10 @@ void ETBOARD_WIFI::save_config()
 void ETBOARD_WIFI::wifi_config()
 //=================================================================================
 {
+  // wifi config start: BLEU LED ON
+  pinMode(D3, OUTPUT);
+  digitalWrite(D3, HIGH);
+
   //set config save notify callback
   wifiManager.setSaveConfigCallback(save_config_cb);
 
@@ -201,10 +204,8 @@ void ETBOARD_WIFI::wifi_config()
 
 	String str_wifi_ap_name = "ETAP_" + WiFi.macAddress().substring(9);
   int str_len = str_wifi_ap_name.length() + 1;
-
   char ch_wifi_ap_name[20];
   str_wifi_ap_name.toCharArray(ch_wifi_ap_name, str_len);
-
   //fetches ssid and pass and tries to connect
   //if it does not connect it starts an access point with the specified name
   //here  "AutoConnectAP"
@@ -220,6 +221,7 @@ void ETBOARD_WIFI::wifi_config()
 
   //if you get here you have connected to the WiFi
   Serial.println("connected...yeey :)");
+  digitalWrite(D3, LOW);
 }
 
 //=================================================================================
