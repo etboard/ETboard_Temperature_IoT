@@ -3,6 +3,7 @@ let port = 8000;
 let macAdress = '96:EA:E8'
 let topic = macAdress + '/et/smpl/tele/#';
 let useTLS = false;
+//let useTLS = true;
 let cleansession = true;
 let reconnectTimeout = 3000;
 let tempData = new Array();
