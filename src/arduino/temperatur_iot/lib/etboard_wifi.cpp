@@ -134,8 +134,8 @@ void ETBOARD_WIFI::load_config()
         DeserializationError error = deserializeJson(json, configFile);
         if (!error) {
           Serial.println("\nparsed json");
-          serializeJsonPretty(json, Serial
-          Serial.println("\n"););
+          serializeJsonPretty(json, Serial);
+          Serial.println("\n");
           strcpy(mqtt_server, json["mqtt_server"]);
           strcpy(mqtt_port, json["mqtt_port"]);
           strcpy(mqtt_user, json["mqtt_user"]);
@@ -197,7 +197,7 @@ void ETBOARD_WIFI::wifi_config()
   //wifiManager.setTimeout(120);
   wifiManager.setTimeout(30);
 
-	String str_wifi_ap_name = "ET_AP_" + WiFi.macAddress().substring(9);
+	String str_wifi_ap_name = "ETAP_" + WiFi.macAddress().substring(9);
   int str_len = str_wifi_ap_name.length() + 1;
 
   char ch_wifi_ap_name[20];
