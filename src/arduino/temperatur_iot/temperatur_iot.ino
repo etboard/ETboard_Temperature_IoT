@@ -151,14 +151,27 @@ void display_Information()                        // 센싱 정보 OLED 표시 �
 void send_humidity_and_temperature()
 //==========================================================================================
 {
+  /*
   String string_t;
   string_t= String(temperature, 2);               // 온도를 소숫점 2자리 문자열로 변환   
   app.mqtt.publish_tele("/temperature", String(string_t)); // 온도 값을 송신
 
   string_t = String(humidity, 2);                 // 습도를 소숫점 2자리 문자열로 변환
   app.mqtt.publish_tele("/humidity", String(string_t)); // 습도 값을 송신
+  */
+  
+  DynamicJsonDocument doc(1024);
+  doc["temperature"] = round2(temperature);
+  doc["humidity"] = humidity;
+
+  String output;
+  serializeJson(doc, output);
+  app.mqtt.publish_tele("/sensor", output); // 습도 값을 송신
 }
 
+double round2(double value) {
+   return (int)(value * 100 + 0.5) / 100.0;
+}
 
 //==========================================================================================
 //                                                    
