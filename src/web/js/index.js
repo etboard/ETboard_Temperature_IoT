@@ -56,44 +56,49 @@ function onMessageArrived(message) {
     let topics = topic.split('/');
     let area = topics[4];
 
-    switch (area) {
-        case 'temperature':
-            $('#temperatureSensor').html('(Sensor value: ' + payload + ')');
-            $('#temperatureLabel').text(payload + ' °C');
-            $('#temperatureLabel').addClass('badge-default');
-
-            tempData.push({
-                "timestamp": Date().slice(16, 24),
-                "value": parseInt(payload)
-            });
-            if (tempData.length >= 10) {
-                tempData.shift()
-            }
-            drawChart("temperature", tempData);
-
-            break;
-        case 'humidity':
-              $('#humiditySensor').html('(Sensor value: ' + payload + ')');
-
-              $('#humidityLabel').text(payload + ' %');
-              $('#humidityLabel').addClass('badge-default');
-
-              humiData.push({
-                  "timestamp": Date().slice(16, 24),
-                  "value": parseInt(payload)
-              });
-              if (humiData.length >= 10) {
-                  humiData.shift()
-              }
-              drawChart("humidity", humiData);
-
-              break;
-
-        default:
-            console.log('Error: Data do not match the MQTT topic.');
-            break;
+    if (area === 'sensor') {
+      processSensor(payload);
+    } else {
+      console.log('Error: Data do not match the MQTT topic.');
     }
 };
+
+function processSensor(payload){
+  let obj;
+  try {
+      obj = JSON.parse(payload);
+  } catch (e) {
+      return undefined; // Or whatever action you want here
+  }
+
+  // temperature
+  $('#temperatureSensor').html('(Sensor value: ' + obj.temperature + ')');
+  $('#temperatureLabel').text(obj.temperature + ' °C');
+  $('#temperatureLabel').addClass('badge-default');
+
+  tempData.push({
+      "timestamp": Date().slice(16, 24),
+      "value": parseInt(obj.temperature)
+  });
+  if (tempData.length >= 10) {
+      tempData.shift()
+  }
+  drawChart("temperature", tempData);
+
+  // humidty
+  $('#humiditySensor').html('(Sensor value: ' + obj.humidity + ')');
+  $('#humidityLabel').text(obj.humidity + ' %');
+  $('#humidityLabel').addClass('badge-default');
+
+  humiData.push({
+      "timestamp": Date().slice(16, 24),
+      "value": parseInt(obj.humidity)
+  });
+  if (humiData.length >= 10) {
+      humiData.shift()
+  }
+  drawChart("humidity", humiData);
+}
 
 function drawChart(sensor, data) {
     let ctx;
