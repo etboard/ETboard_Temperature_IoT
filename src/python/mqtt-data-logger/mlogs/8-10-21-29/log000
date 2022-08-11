@@ -1,0 +1,270 @@
+{"time": [2022, 8, 10, 21, 29, 9, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 54}}
+{"time": [2022, 8, 10, 21, 32, 16, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.7, "humidity": 54}}
+{"time": [2022, 8, 10, 21, 32, 21, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.6, "humidity": 54}}
+{"time": [2022, 8, 10, 21, 32, 26, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.5, "humidity": 54}}
+{"time": [2022, 8, 10, 21, 32, 31, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.7, "humidity": 54}}
+{"time": [2022, 8, 10, 21, 32, 36, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 54}}
+{"time": [2022, 8, 10, 21, 34, 46, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 55}}
+{"time": [2022, 8, 10, 21, 36, 17, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 54}}
+{"time": [2022, 8, 10, 21, 36, 22, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 55}}
+{"time": [2022, 8, 10, 21, 36, 27, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 54}}
+{"time": [2022, 8, 10, 21, 38, 8, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 55}}
+{"time": [2022, 8, 10, 21, 38, 18, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 54}}
+{"time": [2022, 8, 10, 21, 40, 13, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 55}}
+{"time": [2022, 8, 10, 21, 50, 42, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.7, "humidity": 55}}
+{"time": [2022, 8, 10, 21, 50, 47, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.3, "humidity": 55}}
+{"time": [2022, 8, 10, 21, 50, 52, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.2, "humidity": 55}}
+{"time": [2022, 8, 10, 21, 53, 13, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.2, "humidity": 56}}
+{"time": [2022, 8, 10, 22, 14, 15, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.2, "humidity": 57}}
+{"time": [2022, 8, 10, 22, 14, 20, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.2, "humidity": 56}}
+{"time": [2022, 8, 10, 22, 14, 46, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.2, "humidity": 57}}
+{"time": [2022, 8, 10, 22, 14, 56, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.2, "humidity": 56}}
+{"time": [2022, 8, 10, 22, 15, 6, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.2, "humidity": 57}}
+{"time": [2022, 8, 10, 22, 19, 47, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.2, "humidity": 56}}
+{"time": [2022, 8, 10, 22, 19, 58, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.2, "humidity": 57}}
+{"time": [2022, 8, 10, 22, 20, 43, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.2, "humidity": 56}}
+{"time": [2022, 8, 10, 22, 22, 28, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.2, "humidity": 57}}
+{"time": [2022, 8, 10, 22, 23, 9, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.2, "humidity": 56}}
+{"time": [2022, 8, 10, 22, 23, 14, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.2, "humidity": 57}}
+{"time": [2022, 8, 10, 22, 25, 49, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.2, "humidity": 56}}
+{"time": [2022, 8, 10, 22, 26, 35, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.2, "humidity": 57}}
+{"time": [2022, 8, 10, 22, 28, 45, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.2, "humidity": 56}}
+{"time": [2022, 8, 10, 22, 28, 51, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.2, "humidity": 57}}
+{"time": [2022, 8, 10, 22, 30, 56, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.3, "humidity": 56}}
+{"time": [2022, 8, 10, 22, 31, 1, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.6, "humidity": 56}}
+{"time": [2022, 8, 10, 22, 31, 6, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.7, "humidity": 56}}
+{"time": [2022, 8, 10, 22, 31, 11, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 56}}
+{"time": [2022, 8, 10, 22, 32, 37, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 57}}
+{"time": [2022, 8, 10, 22, 37, 34, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.7, "humidity": 57}}
+{"time": [2022, 8, 10, 22, 37, 54, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 57}}
+{"time": [2022, 8, 10, 22, 51, 49, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 58}}
+{"time": [2022, 8, 10, 22, 51, 54, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 57}}
+{"time": [2022, 8, 10, 22, 52, 19, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 58}}
+{"time": [2022, 8, 10, 22, 53, 29, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 57}}
+{"time": [2022, 8, 10, 23, 1, 32, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 58}}
+{"time": [2022, 8, 10, 23, 1, 37, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 57}}
+{"time": [2022, 8, 10, 23, 1, 47, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 58}}
+{"time": [2022, 8, 10, 23, 4, 54, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 59}}
+{"time": [2022, 8, 10, 23, 5, 54, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 58}}
+{"time": [2022, 8, 10, 23, 6, 4, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 59}}
+{"time": [2022, 8, 10, 23, 6, 14, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 58}}
+{"time": [2022, 8, 10, 23, 6, 59, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 59}}
+{"time": [2022, 8, 10, 23, 15, 17, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 58}}
+{"time": [2022, 8, 10, 23, 20, 19, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 57}}
+{"time": [2022, 8, 10, 23, 20, 55, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 58}}
+{"time": [2022, 8, 10, 23, 21, 25, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 57}}
+{"time": [2022, 8, 10, 23, 21, 30, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 58}}
+{"time": [2022, 8, 10, 23, 22, 50, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 57}}
+{"time": [2022, 8, 10, 23, 25, 51, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 58}}
+{"time": [2022, 8, 10, 23, 28, 32, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 59}}
+{"time": [2022, 8, 10, 23, 33, 49, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 58}}
+{"time": [2022, 8, 10, 23, 33, 54, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 59}}
+{"time": [2022, 8, 10, 23, 34, 34, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 58}}
+{"time": [2022, 8, 10, 23, 34, 39, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 59}}
+{"time": [2022, 8, 10, 23, 38, 11, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 58}}
+{"time": [2022, 8, 10, 23, 44, 58, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 59}}
+{"time": [2022, 8, 10, 23, 45, 33, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 58}}
+{"time": [2022, 8, 10, 23, 45, 43, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 59}}
+{"time": [2022, 8, 10, 23, 47, 14, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 58}}
+{"time": [2022, 8, 10, 23, 53, 14, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31, "humidity": 58}}
+{"time": [2022, 8, 10, 23, 53, 23, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.2, "humidity": 58}}
+{"time": [2022, 8, 10, 23, 53, 23, 2, 222, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.3, "humidity": 58}}
+{"time": [2022, 8, 11, 0, 4, 9, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.3, "humidity": 59}}
+{"time": [2022, 8, 11, 0, 6, 20, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.2, "humidity": 59}}
+{"time": [2022, 8, 11, 0, 6, 25, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31, "humidity": 59}}
+{"time": [2022, 8, 11, 0, 6, 30, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 59}}
+{"time": [2022, 8, 11, 0, 9, 31, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 60}}
+{"time": [2022, 8, 11, 0, 11, 52, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 59}}
+{"time": [2022, 8, 11, 0, 11, 57, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 60}}
+{"time": [2022, 8, 11, 0, 22, 51, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 59}}
+{"time": [2022, 8, 11, 0, 22, 56, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 60}}
+{"time": [2022, 8, 11, 0, 28, 33, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 59}}
+{"time": [2022, 8, 11, 0, 29, 33, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 60}}
+{"time": [2022, 8, 11, 0, 30, 23, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 59}}
+{"time": [2022, 8, 11, 0, 30, 54, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 60}}
+{"time": [2022, 8, 11, 0, 30, 59, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 59}}
+{"time": [2022, 8, 11, 0, 31, 4, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 60}}
+{"time": [2022, 8, 11, 0, 31, 9, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 59}}
+{"time": [2022, 8, 11, 0, 31, 14, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 60}}
+{"time": [2022, 8, 11, 0, 31, 29, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 59}}
+{"time": [2022, 8, 11, 0, 31, 34, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 60}}
+{"time": [2022, 8, 11, 0, 31, 39, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 59}}
+{"time": [2022, 8, 11, 0, 31, 44, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 60}}
+{"time": [2022, 8, 11, 0, 32, 29, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 59}}
+{"time": [2022, 8, 11, 0, 33, 4, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 60}}
+{"time": [2022, 8, 11, 0, 33, 9, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 59}}
+{"time": [2022, 8, 11, 0, 35, 15, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 60}}
+{"time": [2022, 8, 11, 0, 35, 20, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 59}}
+{"time": [2022, 8, 11, 0, 36, 31, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 60}}
+{"time": [2022, 8, 11, 0, 36, 36, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 59}}
+{"time": [2022, 8, 11, 0, 36, 56, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 60}}
+{"time": [2022, 8, 11, 0, 38, 6, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 59}}
+{"time": [2022, 8, 11, 0, 38, 52, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 60}}
+{"time": [2022, 8, 11, 0, 48, 55, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 61}}
+{"time": [2022, 8, 11, 0, 51, 21, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 60}}
+{"time": [2022, 8, 11, 0, 57, 3, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 61}}
+{"time": [2022, 8, 11, 1, 1, 30, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 60}}
+{"time": [2022, 8, 11, 1, 1, 40, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 61}}
+{"time": [2022, 8, 11, 1, 1, 45, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 60}}
+{"time": [2022, 8, 11, 1, 1, 50, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 61}}
+{"time": [2022, 8, 11, 1, 1, 55, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 60}}
+{"time": [2022, 8, 11, 1, 5, 46, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 61}}
+{"time": [2022, 8, 11, 1, 7, 27, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 60}}
+{"time": [2022, 8, 11, 1, 12, 44, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 61}}
+{"time": [2022, 8, 11, 1, 14, 4, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 60}}
+{"time": [2022, 8, 11, 1, 14, 19, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 61}}
+{"time": [2022, 8, 11, 1, 18, 36, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 60}}
+{"time": [2022, 8, 11, 1, 42, 9, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 61}}
+{"time": [2022, 8, 11, 2, 1, 55, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 62}}
+{"time": [2022, 8, 11, 2, 2, 15, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 61}}
+{"time": [2022, 8, 11, 2, 2, 20, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 62}}
+{"time": [2022, 8, 11, 2, 2, 36, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 61}}
+{"time": [2022, 8, 11, 2, 3, 36, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 62}}
+{"time": [2022, 8, 11, 2, 3, 56, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 61}}
+{"time": [2022, 8, 11, 2, 7, 37, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 62}}
+{"time": [2022, 8, 11, 2, 34, 12, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 61}}
+{"time": [2022, 8, 11, 2, 37, 13, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 62}}
+{"time": [2022, 8, 11, 2, 42, 55, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 61}}
+{"time": [2022, 8, 11, 2, 45, 6, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 62}}
+{"time": [2022, 8, 11, 2, 45, 16, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 61}}
+{"time": [2022, 8, 11, 2, 45, 21, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 62}}
+{"time": [2022, 8, 11, 2, 46, 1, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 61}}
+{"time": [2022, 8, 11, 2, 46, 37, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 62}}
+{"time": [2022, 8, 11, 2, 51, 54, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 61}}
+{"time": [2022, 8, 11, 3, 3, 58, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 62}}
+{"time": [2022, 8, 11, 3, 4, 38, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 61}}
+{"time": [2022, 8, 11, 3, 37, 50, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 62}}
+{"time": [2022, 8, 11, 3, 38, 30, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 61}}
+{"time": [2022, 8, 11, 3, 38, 50, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 62}}
+{"time": [2022, 8, 11, 3, 39, 1, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 61}}
+{"time": [2022, 8, 11, 3, 39, 16, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 62}}
+{"time": [2022, 8, 11, 3, 39, 21, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 61}}
+{"time": [2022, 8, 11, 3, 39, 41, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 62}}
+{"time": [2022, 8, 11, 4, 18, 0, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 61}}
+{"time": [2022, 8, 11, 4, 20, 11, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 62}}
+{"time": [2022, 8, 11, 4, 20, 21, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 61}}
+{"time": [2022, 8, 11, 4, 20, 46, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 62}}
+{"time": [2022, 8, 11, 4, 21, 31, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 61}}
+{"time": [2022, 8, 11, 4, 36, 31, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.8, "humidity": 62}}
+{"time": [2022, 8, 11, 7, 24, 32, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 30.9, "humidity": 62}}
+{"time": [2022, 8, 11, 7, 25, 8, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.1, "humidity": 62}}
+{"time": [2022, 8, 11, 7, 25, 13, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.2, "humidity": 61}}
+{"time": [2022, 8, 11, 7, 25, 18, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.3, "humidity": 61}}
+{"time": [2022, 8, 11, 7, 57, 28, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.3, "humidity": 60}}
+{"time": [2022, 8, 11, 7, 59, 59, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.3, "humidity": 61}}
+{"time": [2022, 8, 11, 8, 0, 9, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.3, "humidity": 60}}
+{"time": [2022, 8, 11, 8, 0, 29, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.3, "humidity": 61}}
+{"time": [2022, 8, 11, 8, 0, 39, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.3, "humidity": 60}}
+{"time": [2022, 8, 11, 8, 1, 34, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.4, "humidity": 60}}
+{"time": [2022, 8, 11, 8, 1, 39, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.7, "humidity": 60}}
+{"time": [2022, 8, 11, 8, 1, 44, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.8, "humidity": 60}}
+{"time": [2022, 8, 11, 8, 12, 53, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.7, "humidity": 60}}
+{"time": [2022, 8, 11, 8, 12, 58, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.6, "humidity": 60}}
+{"time": [2022, 8, 11, 8, 13, 8, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.5, "humidity": 60}}
+{"time": [2022, 8, 11, 8, 13, 13, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.6, "humidity": 60}}
+{"time": [2022, 8, 11, 8, 13, 23, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.4, "humidity": 60}}
+{"time": [2022, 8, 11, 8, 13, 38, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.3, "humidity": 60}}
+{"time": [2022, 8, 11, 8, 13, 58, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.4, "humidity": 60}}
+{"time": [2022, 8, 11, 8, 14, 8, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.5, "humidity": 60}}
+{"time": [2022, 8, 11, 8, 14, 13, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.6, "humidity": 60}}
+{"time": [2022, 8, 11, 8, 14, 33, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.7, "humidity": 60}}
+{"time": [2022, 8, 11, 8, 14, 43, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.8, "humidity": 60}}
+{"time": [2022, 8, 11, 8, 27, 28, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.8, "humidity": 59}}
+{"time": [2022, 8, 11, 8, 33, 4, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.8, "humidity": 60}}
+{"time": [2022, 8, 11, 8, 33, 20, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.8, "humidity": 61}}
+{"time": [2022, 8, 11, 8, 33, 30, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.8, "humidity": 62}}
+{"time": [2022, 8, 11, 8, 33, 45, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.8, "humidity": 63}}
+{"time": [2022, 8, 11, 8, 33, 55, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.8, "humidity": 65}}
+{"time": [2022, 8, 11, 8, 34, 5, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.8, "humidity": 66}}
+{"time": [2022, 8, 11, 8, 34, 10, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.8, "humidity": 67}}
+{"time": [2022, 8, 11, 8, 34, 25, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.4, "humidity": 67}}
+{"time": [2022, 8, 11, 8, 34, 30, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.3, "humidity": 67}}
+{"time": [2022, 8, 11, 8, 34, 40, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.3, "humidity": 68}}
+{"time": [2022, 8, 11, 8, 34, 55, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.3, "humidity": 67}}
+{"time": [2022, 8, 11, 8, 35, 50, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.3, "humidity": 66}}
+{"time": [2022, 8, 11, 8, 36, 10, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.3, "humidity": 65}}
+{"time": [2022, 8, 11, 8, 36, 31, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.3, "humidity": 64}}
+{"time": [2022, 8, 11, 8, 36, 46, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.6, "humidity": 64}}
+{"time": [2022, 8, 11, 8, 36, 51, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.8, "humidity": 63}}
+{"time": [2022, 8, 11, 8, 37, 26, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.8, "humidity": 64}}
+{"time": [2022, 8, 11, 8, 37, 46, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.8, "humidity": 65}}
+{"time": [2022, 8, 11, 8, 38, 41, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.8, "humidity": 64}}
+{"time": [2022, 8, 11, 8, 39, 21, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.8, "humidity": 63}}
+{"time": [2022, 8, 11, 8, 39, 52, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.8, "humidity": 64}}
+{"time": [2022, 8, 11, 8, 40, 2, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.8, "humidity": 66}}
+{"time": [2022, 8, 11, 8, 40, 12, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.8, "humidity": 67}}
+{"time": [2022, 8, 11, 8, 40, 22, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.5, "humidity": 67}}
+{"time": [2022, 8, 11, 8, 40, 27, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.4, "humidity": 67}}
+{"time": [2022, 8, 11, 8, 40, 32, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.3, "humidity": 67}}
+{"time": [2022, 8, 11, 8, 40, 47, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.3, "humidity": 68}}
+{"time": [2022, 8, 11, 8, 41, 17, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.5, "humidity": 68}}
+{"time": [2022, 8, 11, 8, 41, 22, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.8, "humidity": 68}}
+{"time": [2022, 8, 11, 8, 42, 2, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.8, "humidity": 69}}
+{"time": [2022, 8, 11, 8, 42, 7, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.6, "humidity": 69}}
+{"time": [2022, 8, 11, 8, 42, 13, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.5, "humidity": 69}}
+{"time": [2022, 8, 11, 8, 42, 22, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.6, "humidity": 69}}
+{"time": [2022, 8, 11, 8, 42, 27, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.5, "humidity": 69}}
+{"time": [2022, 8, 11, 8, 42, 33, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.4, "humidity": 69}}
+{"time": [2022, 8, 11, 8, 42, 38, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.3, "humidity": 69}}
+{"time": [2022, 8, 11, 8, 42, 58, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.3, "humidity": 70}}
+{"time": [2022, 8, 11, 8, 43, 8, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.5, "humidity": 70}}
+{"time": [2022, 8, 11, 8, 43, 13, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.7, "humidity": 70}}
+{"time": [2022, 8, 11, 8, 43, 33, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.8, "humidity": 70}}
+{"time": [2022, 8, 11, 8, 48, 24, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.8, "humidity": 71}}
+{"time": [2022, 8, 11, 8, 49, 15, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.8, "humidity": 70}}
+{"time": [2022, 8, 11, 8, 49, 50, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.8, "humidity": 69}}
+{"time": [2022, 8, 11, 8, 50, 45, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.8, "humidity": 70}}
+{"time": [2022, 8, 11, 8, 51, 5, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.8, "humidity": 69}}
+{"time": [2022, 8, 11, 8, 52, 16, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.8, "humidity": 70}}
+{"time": [2022, 8, 11, 8, 55, 17, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.8, "humidity": 71}}
+{"time": [2022, 8, 11, 8, 56, 32, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.8, "humidity": 70}}
+{"time": [2022, 8, 11, 8, 57, 2, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.8, "humidity": 71}}
+{"time": [2022, 8, 11, 8, 57, 27, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.8, "humidity": 70}}
+{"time": [2022, 8, 11, 8, 59, 18, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.7, "humidity": 70}}
+{"time": [2022, 8, 11, 8, 59, 23, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.5, "humidity": 70}}
+{"time": [2022, 8, 11, 8, 59, 28, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.3, "humidity": 70}}
+{"time": [2022, 8, 11, 9, 1, 19, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.3, "humidity": 69}}
+{"time": [2022, 8, 11, 9, 4, 40, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.3, "humidity": 68}}
+{"time": [2022, 8, 11, 9, 6, 10, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.3, "humidity": 69}}
+{"time": [2022, 8, 11, 9, 7, 10, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.3, "humidity": 68}}
+{"time": [2022, 8, 11, 9, 8, 31, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"temperature": 31.3, "humidity": 67}}
+{"time": [2022, 8, 11, 9, 9, 17, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"mac": "96:EA:E8", "temperature": 31.3, "humidity": 67}}
+{"time": [2022, 8, 11, 9, 9, 22, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"mac": "96:EA:E8", "temperature": 30.9, "humidity": 66}}
+{"time": [2022, 8, 11, 9, 9, 27, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"mac": "96:EA:E8", "temperature": 30.8, "humidity": 66}}
+{"time": [2022, 8, 11, 9, 9, 32, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"mac": "96:EA:E8", "temperature": 30.8, "humidity": 65}}
+{"time": [2022, 8, 11, 9, 9, 42, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"mac": "96:EA:E8", "temperature": 30.8, "humidity": 64}}
+{"time": [2022, 8, 11, 9, 9, 57, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"mac": "96:EA:E8", "temperature": 30.8, "humidity": 63}}
+{"time": [2022, 8, 11, 9, 10, 7, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"mac": "96:EA:E8", "temperature": 30.8, "humidity": 62}}
+{"time": [2022, 8, 11, 9, 10, 12, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"mac": "96:EA:E8", "temperature": 30.2, "humidity": 62}}
+{"time": [2022, 8, 11, 9, 10, 32, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"mac": "96:EA:E8", "temperature": 30.2, "humidity": 61}}
+{"time": [2022, 8, 11, 9, 10, 52, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"mac": "96:EA:E8", "temperature": 15.1, "humidity": 170.8000031}}
+{"time": [2022, 8, 11, 9, 10, 57, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"mac": "96:EA:E8", "temperature": 30.2, "humidity": 61}}
+{"time": [2022, 8, 11, 9, 11, 2, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"mac": "96:EA:E8", "temperature": 29.8, "humidity": 61}}
+{"time": [2022, 8, 11, 9, 11, 38, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"mac": "96:EA:E8", "temperature": 29.8, "humidity": 60}}
+{"time": [2022, 8, 11, 9, 11, 53, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"mac": "96:EA:E8", "temperature": -14.59, "humidity": 158}}
+{"time": [2022, 8, 11, 9, 11, 58, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"mac": "96:EA:E8", "temperature": 29.8, "humidity": 60}}
+{"time": [2022, 8, 11, 9, 12, 13, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"mac": "96:EA:E8", "temperature": 29.3, "humidity": 59}}
+{"time": [2022, 8, 11, 9, 12, 53, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"mac": "96:EA:E8", "temperature": 29.3, "humidity": 58}}
+{"time": [2022, 8, 11, 9, 13, 38, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"mac": "96:EA:E8", "temperature": 28.9, "humidity": 58}}
+{"time": [2022, 8, 11, 9, 13, 48, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"mac": "96:EA:E8", "temperature": 28.9, "humidity": 57}}
+{"time": [2022, 8, 11, 9, 14, 59, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"mac": "96:EA:E8", "temperature": 28.5, "humidity": 57}}
+{"time": [2022, 8, 11, 9, 15, 49, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"mac": "96:EA:E8", "temperature": 28.5, "humidity": 56}}
+{"time": [2022, 8, 11, 9, 16, 24, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"mac": "96:EA:E8", "temperature": 28.5, "humidity": 57}}
+{"time": [2022, 8, 11, 9, 16, 34, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"mac": "96:EA:E8", "temperature": 28.5, "humidity": 56}}
+{"time": [2022, 8, 11, 9, 18, 40, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"mac": "96:EA:E8", "temperature": 28.5, "humidity": 55}}
+{"time": [2022, 8, 11, 9, 20, 21, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"mac": "96:EA:E8", "temperature": 28.5, "humidity": -99}}
+{"time": [2022, 8, 11, 9, 20, 26, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"mac": "96:EA:E8", "temperature": 28.5, "humidity": 54}}
+{"time": [2022, 8, 11, 9, 20, 52, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"mac": "96:EA:E8", "temperature": 28.4, "humidity": 54}}
+{"time": [2022, 8, 11, 9, 20, 57, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"mac": "96:EA:E8", "temperature": 28.1, "humidity": 54}}
+{"time": [2022, 8, 11, 9, 21, 2, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"mac": "96:EA:E8", "temperature": 28, "humidity": 54}}
+{"time": [2022, 8, 11, 9, 21, 37, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"mac": "96:EA:E8", "temperature": 28, "humidity": 53}}
+{"time": [2022, 8, 11, 9, 24, 38, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"mac": "96:EA:E8", "temperature": 28, "humidity": 52}}
+{"time": [2022, 8, 11, 9, 28, 39, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"mac": "96:EA:E8", "temperature": 28, "humidity": -99}}
+{"time": [2022, 8, 11, 9, 28, 44, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"mac": "96:EA:E8", "temperature": 28, "humidity": 52}}
+{"time": [2022, 8, 11, 9, 31, 10, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"mac": "96:EA:E8", "temperature": 28, "humidity": 51}}
+{"time": [2022, 8, 11, 9, 32, 6, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"mac": "96:EA:E8", "temperature": 27.8, "humidity": 52}}
+{"time": [2022, 8, 11, 9, 32, 11, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"mac": "96:EA:E8", "temperature": 27.6, "humidity": 52}}
+{"time": [2022, 8, 11, 9, 34, 31, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"mac": "96:EA:E8", "temperature": -13.69, "humidity": 154}}
+{"time": [2022, 8, 11, 9, 34, 36, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"mac": "96:EA:E8", "temperature": 27.6, "humidity": 52}}
+{"time": [2022, 8, 11, 9, 35, 37, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"mac": "96:EA:E8", "temperature": -13.69, "humidity": 154}}
+{"time": [2022, 8, 11, 9, 35, 42, 3, 223, 0], "topic": "96:EA:E8/et/smpl/tele/sensor", "message": {"mac": "96:EA:E8", "temperature": 27.6, "humidity": 52}}
