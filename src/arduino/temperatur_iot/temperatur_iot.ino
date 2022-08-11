@@ -138,7 +138,7 @@ void send_sensor_value()
 //==========================================================================================
 {
   DynamicJsonDocument doc(1024);
-  doc["mac"] = app.mqtt.mac_address.substring(9);
+  //doc["mac"] = app.mqtt.mac_address.substring(9);
   doc["temperature"] = app.etboard.round2(temperature);
   doc["humidity"] = humidity;
 
