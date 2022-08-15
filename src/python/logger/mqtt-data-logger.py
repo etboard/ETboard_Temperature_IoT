@@ -148,11 +148,14 @@ def log_worker():
             results = q.get()
             if results is None:
                 continue
+            """
             if options["JSON"]:
                 log.log_json(results)
             else:
                 log.log_data(results)
-            #print("message saved ",results["message"])
+            """
+            log.log_data(results)
+            print("message saved ",results["message"])
     log.close_file()
 
 # MAIN PROGRAM
