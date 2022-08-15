@@ -144,7 +144,7 @@ void send_sensor_value()
 
   String output;
   serializeJson(doc, output);
-  app.mqtt.publish_tele("/sensor", output); // 습도 값을 송신
+  app.mqtt.publish_tele("/sensor", output);       // 메시지 송신
 }
 
 
