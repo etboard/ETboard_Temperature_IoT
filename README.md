@@ -1,2 +1,3 @@
-# ETboard_Temperature
- etboard 아두이노 온도 측정 스마트폰 
+# ETboard_Temperature_IoT
+- 이티보드에서 온도를 측정하고 그 결과를 OLED와 스마트폰에서 확인
+-ETboard, DHT11, ESP32, Arduino, Smartphone
