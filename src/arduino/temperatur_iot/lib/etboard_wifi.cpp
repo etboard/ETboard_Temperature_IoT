@@ -109,7 +109,7 @@ void ETBOARD_WIFI::checkButton()
         wifiManager.resetSettings();
 
         // 2022.08.31
-        //wifi_config_erase();
+        wifi_config_erase();
         /*
         Serial.println("Erasing Config, restarting");
         SPIFFS.format();
