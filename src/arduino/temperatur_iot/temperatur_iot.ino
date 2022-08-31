@@ -124,11 +124,13 @@ void display_Information()                        // 센싱 정보 OLED 표시 �
 //==========================================================================================
 {
   String string_t;
-  string_t= String(temperature, 2);               // 온도를 문자열로 변환
+  string_t= String(temperature, 1);               // 온도를 문자열로 변환
+  String string_h;
+  string_h= String(humidity, 1);                  // 습도를 문자열로 변환
   
   app.oled.setLine(1, board_firmware_verion);     // 1번째 줄에 펌웨어 버전
   app.oled.setLine(2,"M:" + app.mqtt.mac_address.substring(9)); // 2번재 줄에 MAC 주소
-  app.oled.setLine(3,"T:" + string_t);            // 3번재 줄에 온도
+  app.oled.setLine(3, string_t + "/" + string_h); // 3번재 줄에 온도 + 습도
   app.oled.display();                             // OLED에 표시
 }
 
