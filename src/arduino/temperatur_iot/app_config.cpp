@@ -96,7 +96,7 @@ void APP_CONFIG::fast_blink_led(void)
 void APP_CONFIG::display_BI(void) 
 //==========================================================================================
 {
-  oled.setLine(1,"<ketri.re.kr>");                // 1번째 줄
+  oled.setLine(1,"et.ketri.re.kr");               // 1번째 줄
   oled.setLine(2,"Welcome to");                   // 2번째 줄
   oled.setLine(3," ET-Board");                    // 3번재 줄
   oled.display();                                 // OLED에 표시

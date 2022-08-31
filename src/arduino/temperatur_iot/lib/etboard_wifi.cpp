@@ -106,11 +106,15 @@ void ETBOARD_WIFI::checkButton()
       if( digitalRead(TRIGGER_PIN) == LOW ){
         digitalWrite(D2, HIGH); // RED LED ON
         Serial.println("Button Held");
-        Serial.println("Erasing Config, restarting");
         wifiManager.resetSettings();
-        // 2022.08.06
+
+        // 2022.08.31
+        //wifi_config_erase();
+        /*
+        Serial.println("Erasing Config, restarting");
         SPIFFS.format();
         ESP.restart();
+        */
       }
     }
   }
@@ -148,6 +152,13 @@ void ETBOARD_WIFI::load_config()
     }
   } else {
     Serial.println("failed to mount FS");
+    wifi_config_erase();
+    /*
+    Serial.println("Erasing FS and rebooting, 20 seconds");
+    digitalWrite(D2, HIGH); // RED LED ON
+    SPIFFS.format();
+    ESP.restart();
+    */
   }
   //end read
 }
@@ -222,6 +233,16 @@ void ETBOARD_WIFI::wifi_config()
   //if you get here you have connected to the WiFi
   Serial.println("connected...yeey :)");
   digitalWrite(D3, LOW);
+}
+
+//=================================================================================
+void ETBOARD_WIFI::wifi_config_erase()
+//=================================================================================
+{
+  Serial.println("Erasing FS and rebooting, 20 seconds");
+  digitalWrite(D2, HIGH); // RED LED ON
+  SPIFFS.format();
+  ESP.restart();
 }
 
 //=================================================================================

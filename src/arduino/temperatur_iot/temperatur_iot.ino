@@ -8,7 +8,7 @@
  * Modified     : 
 ******************************************************************************************/
 const char* board_hardware_verion = "ETBoard_V1.1";
-const char* board_firmware_verion = "tmp_iot_0.91";
+const char* board_firmware_verion = "tmp_iot_0.94";
 
 //================================================-=========================================
 // 응용 프로그램 구성 사용하기                       
