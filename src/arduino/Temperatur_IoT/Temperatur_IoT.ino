@@ -3,12 +3,12 @@
  * Description  : 이티보드로 온도를 측정하여 스마트폰으로 확인
  * Author       : SCS
  * Created Date : 2022.08.10
- * Reference    : 
- * Modified     : 
+ * Reference    : 'DHT sensor library' by Adafruit
+ * Modified     : 2023.10.27 : SCS : 이티보드 내장 온도 센서 값 추가
  * Modified     : 
 ******************************************************************************************/
 const char* board_hardware_verion = "ETBoard_V1.1";
-const char* board_firmware_verion = "tmp_iot_0.94";
+const char* board_firmware_verion = "tmp_iot_0.95";
 
 //================================================-=========================================
 // 응용 프로그램 구성 사용하기                       
@@ -18,7 +18,7 @@ APP_CONFIG app;
 
 
 //==========================================================================================
-// DHT11 센서 사용하
+// DHT11 센서 사용하기
 //==========================================================================================
 #include "DHT.h"                                  // 디지털 온습도 센서
 DHT dht(D9, DHT11);                               // DHT11
@@ -37,6 +37,8 @@ DHT dht(D9, DHT11);                               // DHT11
 //==========================================================================================
 float humidity;                                   // 습도
 float temperature;                                // 온도
+int sensor = A2;                                  // 온도 센서 지정
+int sensor_result = 0;                            // 온도 센서 결과값 설정 
 
 
 //==========================================================================================
@@ -114,8 +116,10 @@ void do_sensing_process()                       // 자동화 처리 함수
     Serial.println(F("Failed to read temperature from DHT sensor! Now sleep 1000"));
     delay(1000);                                  // 1초 대기
     return;
-  }  
-
+  }                        
+  
+  sensor_result = analogRead(sensor);             // 이티보드 내장 온도 센서 결과값 저장  
+  
   display_Information();                          // 센싱 정보를 OLED에 표시
 }
 
@@ -128,9 +132,11 @@ void display_Information()                        // 센싱 정보 OLED 표시 �
   string_t= String(temperature, 1);               // 온도를 문자열로 변환
   String string_h;
   string_h= String(humidity, 1);                  // 습도를 문자열로 변환
+  String string_a2_t;
+  string_a2_t = String(sensor_result);            // 이티보드 내장 온도 센서 값 문자열로 변환
   
   app.oled.setLine(1, board_firmware_verion);     // 1번째 줄에 펌웨어 버전
-  app.oled.setLine(2,"M:" + app.mqtt.mac_address.substring(9)); // 2번재 줄에 MAC 주소
+  app.oled.setLine(2,"T:" + string_a2_t);         // 2번재 줄에 이티보드 내장 온도
   app.oled.setLine(3, string_t + "/" + string_h); // 3번재 줄에 온도 + 습도
   app.oled.display();                             // OLED에 표시
 }
@@ -144,6 +150,7 @@ void send_sensor_value()
   //doc["mac"] = app.mqtt.mac_address.substring(9);
   doc["temperature"] = app.etboard.round2(temperature);
   doc["humidity"] = humidity;
+  doc["a2_temperature"] = sensor_result;
 
   String output;
   serializeJson(doc, output);
