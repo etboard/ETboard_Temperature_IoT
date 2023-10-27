@@ -43,7 +43,6 @@ parts
 *.bdf
 *.bak
 build/
-dist/
 
 # miscellaneous
 *.orig
